@@ -1,0 +1,47 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/worker_data
+    username: root
+    password: 123456
+#  task:
+#    .scheduling:
+#      enabled=true
+mqtt:
+  broker-url: tcp://127.0.0.1:1883
+  client-id: hym-client
+  default-topic: hym/topic
+  worker-topic: worker/request    # 新增 worker 相关的 topic
+  sensor-topic: sensor/request   # 新增 sensor 相关的 topic
+  worker-res-topic: worker/response    # 新增 worker 相关的 topic
+  sensor-res-topic: sensor/response   # 新增 sensor 相关的 topic
+  completion-timeout: 5000
+
+knife4j:
+  enable: true
+  documents:
+    - group: 1.1.0??
+      name: ????
+  setting:
+    language: zh-CN
+    enable-swagger-models: true
+    enable-document-manage: true
+    swagger-model-name: ?????
+    enable-version: false
+    enable-reload-cache-parameter: false
+    enable-after-script: true
+    enable-filter-multipart-api-method-type: POST
+    enable-filter-multipart-apis: false
+    enable-request-cache: true
+    enable-home-custom: true
+    enable-search: false
+    enable-footer: false
+    enable-footer-custom: true
+    footer-custom-content: Apache License 3.0 | Copyright  2023-wpy??????
+
+    enable-dynamic-parameter: false
+    enable-debug: true
+    enable-open-api: false
+    enable-group: true
+  cors: false
+  production: false
