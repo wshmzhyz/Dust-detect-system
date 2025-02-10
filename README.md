@@ -15,4 +15,4 @@
 
 #### 3.前端部分
 
-cd到my_mqtt文件夹所在目录下,执行npm run serve
+cd到my_mqtt文件夹所在目录下,执行npm run serve,视频悬浮查看可以修改路径为自己本地的一个视频(你可以切成64份)
